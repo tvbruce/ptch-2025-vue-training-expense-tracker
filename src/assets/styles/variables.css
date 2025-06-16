@@ -1,0 +1,117 @@
+:root {
+  /* 主要色彩 */
+  --primary-color: #ffd859; /* Pinia 黃 */
+  --primary-dark: #e6c24d;
+  --secondary-color: #2c3e50; /* 深灰藍 */
+
+  /* 功能色彩 */
+  --success-color: #4caf50; /* 綠色 */
+  --warning-color: #ff9800; /* 橙色 */
+  --danger-color: #f44336; /* 紅色 */
+  --info-color: #2196f3; /* 藍色 */
+
+  /* 收支色彩 */
+  --income-color: #4caf50; /* 收入綠 */
+  --expense-color: #f44336; /* 支出紅 */
+
+  /* 背景色彩 */
+  --bg-primary: #ffffff; /* 主背景 */
+  --bg-secondary: #f8f9fa; /* 次背景 */
+  --bg-accent: #f0f0f0; /* 強調背景 */
+
+  /* 文字色彩 */
+  --text-primary: #2c3e50; /* 主文字 */
+  --text-secondary: #6c757d; /* 次文字 */
+  --text-muted: #adb5bd; /* 輔助文字 */
+
+  /* 邊框色彩 */
+  --border-color: #dee2e6; /* 主邊框 */
+  --border-light: #f0f0f0; /* 淺邊框 */
+
+  /* 間距 */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 3rem; /* 48px */
+
+  /* 字體大小 */
+  --font-xs: 0.75rem; /* 12px */
+  --font-sm: 0.875rem; /* 14px */
+  --font-md: 1rem; /* 16px */
+  --font-lg: 1.125rem; /* 18px */
+  --font-xl: 1.25rem; /* 20px */
+  --font-xxl: 1.5rem; /* 24px */
+  --font-xxxl: 2rem; /* 32px */
+
+  /* 圓角 */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+
+  /* 陰影 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* 斷點 */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* 過渡 */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+/* 額外的別名變數，保持向後相容 */
+:root {
+  --font-2xl: var(--font-xxl);
+  --font-3xl: 2.5rem;
+  --border-radius: var(--radius-lg);
+  --spacing-base: var(--spacing-md);
+  --transition-base: var(--transition-normal);
+  --shadow-lg: var(--shadow-xl);
+}
+
+/* 暗色主題變數 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-accent: #3d3d3d;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #888888;
+    --border-color: #404040;
+    --border-light: #303030;
+  }
+}
+
+/* 手動主題切換 */
+[data-theme='dark'] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-accent: #3d3d3d;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #888888;
+  --border-color: #404040;
+  --border-light: #303030;
+}
+
+[data-theme='light'] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-accent: #f0f0f0;
+  --text-primary: #2c3e50;
+  --text-secondary: #6c757d;
+  --text-muted: #adb5bd;
+  --border-color: #dee2e6;
+  --border-light: #f0f0f0;
+}
